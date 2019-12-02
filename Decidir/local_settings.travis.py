@@ -36,6 +36,8 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+INSTALLED_APPS = INSTALLED_APPS + MODULES
+django_heroku.settings(locals())
 
 # number of bits for the key, all auths should use the same number of bits
 KEYBITS = 256
